@@ -6,7 +6,7 @@ import cors from "cors";
 
 import * as Sentry from "@sentry/node";
 
-import { notFound, errorHandler } from "./middlewares.js";
+import { notFound, errorHandler, setCorsHeaders } from "./middlewares.js";
 import api from "./routes/index.js";
 import { env } from "./utils/env.js";
 
@@ -26,6 +26,8 @@ app.use(
     ],
   })
 );
+app.use(setCorsHeaders);
+
 app.use(morgan("dev"));
 app.use(helmet());
 app.use(json());
