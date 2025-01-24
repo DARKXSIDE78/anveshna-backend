@@ -53,8 +53,8 @@ app.use(Sentry.Handlers.tracingHandler());
 app.get("/", (req, res) => {
   res.json({
     code: 200,
-    message: "success",
-    docs: "https://amvdocs.pages.dev/api/introduction",
+    message: "We Are Carnoixors",
+    docs: "https://t.me/Carnoixor",
   });
 });
 
