@@ -5,7 +5,7 @@ import CryptoJS from "crypto-js";
 import axios from "axios";
 import { load } from "cheerio";
 
-const baseUrl = "https://aniwatch.to";
+const baseUrl = "https://hiwatch.to";
 
 const substringAfter = (str, toFind) => {
   const index = str.indexOf(toFind);
